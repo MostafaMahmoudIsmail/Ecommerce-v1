@@ -1,0 +1,95 @@
+:root {
+    margin: 0;
+    padding: 0;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+html {
+    height: 100vh;
+}
+
+/* start Nav Bar */
+.nav{
+    height: 100px;
+    background-color: yellow;
+    width: 100%;
+}
+.nav-content {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.site-title {
+    width: 300px;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    justify-content:center
+}
+
+.site-title p{
+    margin-top: 6px;
+    align-items: center;
+    font-size: large;
+    font-weight: 900;
+}
+
+.site-title img{
+    height: 100%;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.search-bar{
+    width: 35%;
+    height: 35%;
+    
+}
+
+.search-bar label{
+    font-size: 40px;
+
+}
+
+.search-bar-input{
+    width: 80%;
+    height: 80%;
+    border-radius: 10PX;
+}
+
+.nav-content .login{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-content .login p{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.nav-content .login i{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.nav-content .fav{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.nav-content .cart{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* End Nav Bar */
+
