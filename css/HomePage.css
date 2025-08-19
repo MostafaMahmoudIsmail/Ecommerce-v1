@@ -11,6 +11,10 @@
 html {
     height: 100vh;
 }
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
 
 /* start Nav Bar */
 .nav{
@@ -91,5 +95,133 @@ html {
     font-weight: 900;
 }
 
-/* End Nav Bar */
+/* End Nav Bar */    
 
+/* start sliding window */
+.sliding .container{
+    position: relative;
+}
+.sliding .container::after{
+    content: url(/resources/next.png);
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    z-index: 2;
+}
+.sliding .container::before{
+    content: url(/resources/back.png);
+    position: absolute;
+    top: 50%;
+    right: 95%;
+    z-index: 2;
+}
+.sliding-container{
+    height: 400px;
+}
+.slidingWindow-image{
+    width: 100%;
+    height: 100%;
+}
+
+/* end sliding window */
+
+/* category */
+.category {
+    
+}
+.category .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px ;
+    border: 5px black;
+    border-width: 5px;
+    /* border-style: solid; */
+    background-color: white;
+    padding: auto;
+}
+.category-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.category-image img {
+    width: 100%;
+    height: 100%;
+}
+/* category */
+
+
+/* products-section */
+.products-section{
+    margin-top: 50px;    
+}
+.products-section .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px; 
+}
+
+.products-section .container .product{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    padding: 16px;
+    box-shadow: 0 0 4px 6px rgba(0,0,0,0.1);
+}
+.product-img{
+    width: 100%;
+    height: 300px;
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-name {
+    align-items: center;
+    text-align: center;
+}
+.product-salary,.product-delivry{
+    margin-top: 3px;
+    text-align: right;
+}
+/* products-section */
+
+/* footer */
+.footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #F3F4F8;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section .social{
+    text-align: center;
+}
+.footer-section .social-title{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 50px;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+.social-icon {
+  font-size: 24px;
+  color: #555;
+    
+}
+/* footer */
