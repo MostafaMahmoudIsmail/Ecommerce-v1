@@ -18,44 +18,46 @@ html {
 
 /* start Nav Bar */
 .nav{
-    height: 100px;
-    background-color: yellow;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
     width: 100%;
 }
 .nav-content {
-    width: 70%;
+    width: 90%;
     display: flex;
     margin: 0 auto;
     height: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;  
 }
 
 .site-title {
-    width: 300px;
+    /* width: 300px; */
+    /* height: 40px; */
     align-items: center;
-    height: 40px;
     display: flex;
-    justify-content:center
+    /* justify-content:center */
 }
 
 .site-title p{
-    margin-top: 6px;
-    align-items: center;
-    font-size: large;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .site-title img{
-    height: 100%;
+    height: 40px;
     object-fit: contain;
-    margin-right: 5px;
 }
 
 .search-bar{
-    width: 35%;
-    height: 35%;
-    
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 20px;
+    padding: 5px 10px;
 }
 
 .search-bar label{
@@ -64,33 +66,40 @@ html {
 }
 
 .search-bar-input{
-    width: 80%;
-    height: 80%;
-    border-radius: 10PX;
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.search-bar i {
+    color: #666;
+    font-size: 18px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-actions i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #444;
+    transition: .3s;
+}
+
+.nav-actions i:hover {
+  color: #e63946;
 }
 
 .nav-content .login{
     display: flex;
-    justify-content:space-between;
     align-items: center;
-}
-
-.nav-content .login p{
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.nav-content .login i{
-    font-size: 30px;
-    margin-right: 5px;
-}
-
-.nav-content .fav{
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.nav-content .cart{
+    gap: 5px;
     font-size: 30px;
     font-weight: 900;
 }
